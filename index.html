@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Cumpleaños - Cars</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif;
+      background: linear-gradient(180deg, #1c1c1c, #2b2b2b);
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 16px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 0 #b71c1c;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 12px 0;
+    }
+
+    /* Imagen principal */
+    .hero-image {
+      width: 100%;
+      border-radius: 18px;
+      border: 5px solid #d50000;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      margin: 18px 0;
+      object-fit: cover;
+      background-color: #000;
+    }
+
+    /* Botones */
+    .buttons {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .buttons a {
+      padding: 16px;
+      background: linear-gradient(135deg, #d50000, #ff1a1a);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 6px 0 #8e0000;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(3px);
+      box-shadow: 0 3px 0 #8e0000;
+    }
+
+    /* Álbum */
+    .album {
+      margin-top: 28px;
+      padding: 18px;
+      background: #000000a2;
+      color: #fffefe;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px rgba(255, 255, 255, 0.3);
+    }
+
+    .album h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #d50000;
+    }
+
+    .album p {
+      font-size: 0.95rem;
+    }
+
+    .album a {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 22px;
+      background-color: #ffcc00;
+      color: #1c1c1c;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      border: 3px solid #d50000;
+    }
+
+    .album a:hover {
+      background-color: #ffd633;
+    }
+
+    /* Fecha */
+    .date {
+      margin-top: 24px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      color: #ffcc00;
+      text-shadow: 1px 1px 0 #000;
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .buttons a {
+        min-width: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>🏁 ¡Cumpleaños de Aziel! 🏎️</h1>
+
+    <p>
+      Aziel cumple <strong>3 años</strong>  
+      ¡Prepárate para una carrera llena de diversión con  
+      <strong>Rayo McQueen</strong> y sus amigos! 🚗💨
+    </p>
+
+    <!-- Imagen principal -->
+    <img 
+      src="fotoaz.png"
+      alt="Invitación temática Cars"
+      class="hero-image"
+    >
+
+    <!-- Botones -->
+    <div class="buttons">
+      <a href="https://maps.app.goo.gl/bRgLXWf9FZeSgSAz7" target="_blank">
+        📍 Iglesia · 1:00 PM
+      </a>
+      <a href="https://maps.app.goo.gl/ViWMYpB2Uynaf1YK6" target="_blank">
+        🍽️ Comida · 2:00 PM
+      </a>
+    </div>
+
+    <!-- Álbum -->
+    <div class="album">
+      <h3>📸 Recuerdos</h3>
+      <p>Ayúdanos a llenar el álbum con fotos del festejo</p>
+      <a href="https://photos.app.goo.gl/doqLV1CKTLyN7Ef18" target="_blank">
+        Ver Álbum
+      </a>
+    </div>
+
+    <p class="date">
+      📅 14 de febrero · ⏰ 1:00 PM
+    </p>
+
+  </div>
+</body>
+</html>
